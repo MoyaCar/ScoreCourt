@@ -28,7 +28,7 @@ int score = 0;
 
     public void actualizarResultado(int tantos){
         TextView Contador= findViewById(R.id.Contador_de_puntos_view);
-        Contador.setText(tantos);
+        Contador.setText("" + tantos);
     }
 
 }
