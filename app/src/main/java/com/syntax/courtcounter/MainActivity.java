@@ -57,4 +57,12 @@ public class MainActivity extends AppCompatActivity {
         Contador.setText("" + tantos);
     }
 
+    //reset Button
+
+    public void resetearContadores(View view){
+        score= 0;
+        scoreB = 0;
+        actualizarResultado(score);
+        actualizarResultadoB(scoreB);
+    }
 }
