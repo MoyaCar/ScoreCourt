@@ -10,13 +10,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-
             android:orientation="vertical">
 
             <TextView
@@ -24,7 +24,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="8sp"
-                android:text="Team A" />
+                android:text="Team A"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/Contador_de_puntos_equipoA_view"
@@ -32,29 +33,44 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="8sp"
-                android:text="0" />
+                android:layout_marginBottom="40dp"
+                android:text="0"
+                android:textSize="72sp"
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="24dp"
                 android:onClick="triple"
-                android:text="+3 Points" />
+                android:text="+3 Points"
+                android:textSize="32sp"
+                android:padding="16dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="24dp"
                 android:onClick="doubles"
-                android:text="+2 Points" />
+                android:text="+2 Points"
+                android:textSize="32sp"
+                android:padding="16dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="24dp"
                 android:onClick="FreeShot"
-                android:text="Free Throw" />
+                android:text="Free Throw"
+                android:textSize="32sp"
+                android:padding="16dp"/>
         </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"/>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -67,7 +83,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="8sp"
-                android:text="Team B" />
+                android:text="Team B"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/Contador_de_puntos_equipoB_view"
@@ -75,44 +92,55 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="8sp"
-                android:text="0" />
+                android:layout_marginBottom="40dp"
+                android:text="0"
+                android:textSize="72sp"
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="24dp"
                 android:onClick="tripleB"
-                android:text="+3 Points" />
+                android:padding="16dp"
+                android:text="+3 Points"
+                android:textSize="32sp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="24dp"
+                android:padding="16dp"
                 android:onClick="doublesB"
-                android:text="+2 Points" />
+                android:text="+2 Points"
+                android:textSize="32sp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="24dp"
+                android:padding="16dp"
                 android:onClick="FreeShotB"
-                android:text="Free Throw" />
+                android:text="Free Throw"
+                android:textSize="32sp" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="bottom">
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reset"
             android:layout_gravity="center"
+            android:layout_margin="32sp"
             android:onClick="resetearContadores"
-            />
+            android:text="Reset"
+            android:textSize="32sp"
+            android:padding="16dp"/>
 
     </LinearLayout>
 </LinearLayout>
